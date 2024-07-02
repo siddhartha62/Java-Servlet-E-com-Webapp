@@ -1,0 +1,151 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+  }
+  
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+   
+
+  }
+  body{
+    background: linear-gradient(rgba(0,0,51,0.8), rgba(0,0,12,0.8)), url('/photos/registerback.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
+
+
+
+
+.container {
+    width: 1400px;
+    height: 700px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    height: 100vh;
+    padding: 40px;
+    
+}
+
+.info-section {
+    background-color: slateblue;
+    color: white;
+    padding: 40px;
+    width: 40%;
+}
+
+.info-section h1 {
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.account-btn {
+    padding: 10px 20px;
+    background-color: #2f4e4e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.account-btn:hover {
+    background-color: #56585b;
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 40px;
+    width: 60%;
+}
+
+.form-section h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-container {
+    margin: 10px 0;
+}
+
+.checkbox-container input {
+    margin-right: 5px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+}
+
+.register-btn {
+    padding: 15px 20px;
+    background-color: #2f4e4e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #1b9a99;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-section,
+    .form-section {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+  @media (max-width: 768px) {
+    .site-footer {
+      text-align: center;
+    }
+    .site-footer .foot-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .site-footer .foot-container > div {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+      flex-direction: column;
+    }
+    .product {
+      width: auto;
+      margin: 10px auto;
+    }
+  }

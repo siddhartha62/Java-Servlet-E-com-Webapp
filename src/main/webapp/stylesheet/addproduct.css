@@ -1,0 +1,92 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7f6;
+}
+
+
+.add-product-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.add-product-container h2 {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    flex-basis: 48%;
+}
+ .form-group image-upload{
+    margin-bottom: 15px;
+    flex-basis: 48%;
+}
+ .form-group label {
+    
+    margin-bottom: 5px;
+} 
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.image-upload {
+    flex-basis: 100%;
+}
+ 
+.image-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+}
+
+.image-button {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

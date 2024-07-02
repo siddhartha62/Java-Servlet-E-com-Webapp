@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7f6;
+}
+
+.product-list-container {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.product-list-container h2 {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th, .product-table td {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.product-table th {
+    background: #eee;
+}
+
+.product-table thead {
+    position: sticky;
+    top: 0;
+}
+
+.product-table img {
+    width: 50px;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styles for the delete button for a distinctive look */
+a.btn {
+    background-color: #dc3545;
+}
+
+a.btn:hover {
+    background-color: #c82333;
+}
+
+  

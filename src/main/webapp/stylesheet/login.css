@@ -1,0 +1,142 @@
+/* CSS Reset to remove default margins and paddings */
+html, body, div, section, form {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* This makes sure padding does not add to the width */
+}
+
+/* Ensure full height for the html and body and reset default styles */
+html, body {
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	/* Choose a font similar to your design */
+	overflow-x: hidden; /* Prevents horizontal scrollbar */
+	background-color: #FFFFFF; /* Background color for the whole page */
+}
+
+/* Split screen styling */
+.split-screen {
+	display: flex;
+	flex-direction: row;
+	/* Ensure the children (left and right) are in a row */
+	min-height: 100vh; /* Minimum height of viewport */
+}
+
+.error-message {
+	color: red;
+	font-size: 0.9em;
+	margin-top: 5px;
+}
+
+.left {
+	/* background-color: coral; Replace with the exact color code for your design */
+	flex: 1; /* Takes up half the space */
+	display: flex;
+	justify-content: center; /* Horizontally center content */
+	align-items: center; /* Vertically center content */
+	padding: 50px;
+	color: white;
+	background-image: linear-gradient(rgb(0, 0, 52, 0.8), rgb(0, 0, 51, 0.2)),
+		url(/photos/login\ background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.right {
+	flex: 1; /* Takes up the remaining half of the space */
+	background-color: #FFFFFF; /* White background color */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+	/* Shadow on the left edge */
+}
+
+/* Styling for the welcome message */
+.welcome h1 {
+	font-size: 2.5rem; /* Large font size for the welcome title */
+	margin-bottom: 0.5rem;
+}
+
+.welcome p {
+	font-size: 1rem; /* Regular font size for the paragraph */
+	margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+/* Styling for the login form */
+.login-form {
+	max-width: 400px;
+	width: 100%;
+}
+
+.input-group {
+	margin-bottom: 20px;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.input-group input {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.remember-me {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.remember-me input[type='checkbox'] {
+	margin-right: 5px;
+}
+
+.login-form a {
+	display: block;
+	text-align: right;
+	color: #007BFF;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+.login-form button {
+	width: 100%;
+	padding: 15px;
+	background-color: gray;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+@media ( max-width : 768px) {
+	.site-footer {
+		text-align: center;
+	}
+	.site-footer .container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.site-footer .container>div {
+		margin-bottom: 20px;
+	}
+}
+
+@media ( max-width : 768px) {
+	.product-grid {
+		flex-direction: column;
+	}
+	.product {
+		width: auto;
+		margin: 10px auto;
+	}
+}
